@@ -3,7 +3,7 @@ const express = require("express")
 
 const app = express()
 
-app.route("/",(req,req)=>{
+app.route("/",(req,res)=>{
     res.send({user:"Elvis"})
 })
 
