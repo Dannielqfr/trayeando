@@ -1,9 +1,12 @@
 const { json } = require("express")
 const express = require("express")
+const { connection } = require("./mongodb")
 
 const app = express()
 
-app.route("/",(req,res)=>{
+connection()
+
+app.get("/",(req,res)=>{
     res.send({user:"Elvis"})
 })
 
